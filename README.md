@@ -1,181 +1,160 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7941481&assignment_repo_type=AssignmentRepo)
-# Graded Challenge 4
+<!-- Add banner here -->
 
-_Graded Challenge ini dibuat guna mengevaluasi pembelajaran pada Hacktiv8 Data Science Fulltime Program khususnya pada konsep Clustering._
+# Credit Card Customer Segmentation
 
----
+<!-- Add buttons here -->
 
-## Assignment Objectives
+<!-- Describe your project in brief -->
+This project explores credit card customers and create a segmentation using unsupervised machine learning algorithm
 
-*Graded Challenge 4* ini dibuat guna mengevaluasi konsep Clustering sebagai berikut:
+<!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
-- Mampu memperoleh data menggunakan BigQuery
-- Mampu mempersiapkan data untuk digunakan dalam Clustering
-- Mampu memahami konsep Clustering dengan menggunakan Scikit-Learn
-- Mampu mengimplementasikan Clustering pada data yang diberikan
+Add a cover/banner image for your README. **Why?** Because it easily **grabs people's attention** and it **looks cool**(*duh!obviously!*).
 
----
+The best dimensions for the banner is **1280x650px**. You could also use this for social preview of your repo.
 
-## Problems
+I personally use [**Canva**](https://www.canva.com/) for creating the banner images. All the basic stuff is **free**(*you won't need the pro version in most cases*).
 
-Buatlah model clustering untuk melakukan Customer Segmentation dari data kartu kredit sebuah bank dibawah ini. Data ini merupakan data informasi penggunaan kartu kredit selama 6 bulan terakhir. 
+There are endless badges that you could use in your projects. And they do depend on the project. Some of the ones that I commonly use in every projects are given below.
 
----
+I use [**Shields IO**](https://shields.io/) for making badges. It is a simple and easy to use tool that you can use for almost all your badge cravings. -->
 
-## Conceptual Problems
+<!-- Some badges that you could use -->
 
-*Jawab pertanyaan berikut:*
+<!-- ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
+: This badge shows the version of the current release.
 
-1. Apakah yang dimaksud dengan `inertia` pada algoritma K-Means ?
+![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
+: I think it is self-explanatory. This gives people an idea about how the project is being maintained.
 
-2. Jelaskan yang dimaksud dengan Elbow Method (alasan penggunaan, cara penggunaan, kelemahan/kelebihan, dll) !
+![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)
+: This is a dynamic badge from [**Shields IO**](https://shields.io/) that tracks issues in your project and gets updated automatically. It gives the user an idea about the issues and they can just click the badge to view the issues.
 
-3. Jelaskan perbedaan masing-masing algoritma clustering yang anda gunakan dalam kasus ini !
+![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)
+: This is also a dynamic badge that tracks pull requests. This notifies the maintainers of the project when a new pull request comes.
 
----
+![GitHub All Releases](https://img.shields.io/github/downloads/navendu-pottekkat/awesome-readme/total): If you are not like me and your project gets a lot of downloads(*I envy you*) then you should have a badge that shows the number of downloads! This lets others know how **Awesome** your project is and is worth contributing to.
 
-## Dataset
+![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
+: This shows what kind of open-source license your project uses. This is good idea as it lets people know how they can use your project for themselves.
 
-```{attention}
-Perhatikan petunjuk penggunaan dataset!
-```
+![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html): This is not essential but it is a cool way to let others know about your project! Clicking this button automatically opens twitter and writes a tweet about your project and link to it. All the user has to do is to click tweet. Isn't that neat? -->
 
-1. Pada tugas kali ini, dataset yang digunakan **tidak akan menggunakan `bigquery-public-data`**. 
+# Demo-Preview
 
-2. Masuk ke dalam Google BigQuery. Gunakan informasi dibawah ini sebagai tempat untuk mengambil data (gunakan sebagai informasi untuk klausa `FROM`).
-   * Project ID : `ftds-hacktiv8-project`
-   * Dataset Name : `phase1_assignments`
-   * Table Name : `credit-card-information`
+<!-- Add a demo for your project -->
+Run this code in
 
-3. Ambil data dengan kriteria berikut ini : 
-   * Batch ganjil (FTDS-001, FTDS-003, dst) : semua data dengan column `CUST_ID` bernilai ganjil.
-   * Batch genap (FTDS-002, FTDS-004, dst) : semua data dengan column `CUST_ID` bernilai genap.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NikkiSatmaka/creditcard-customer-segmentation/blob/main/h8dsft_P1G4_nikki_satmaka.ipynb)              | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/NikkiSatmaka/creditcard-customer-segmentation/blob/main/h8dsft_P1G4_nikki_satmaka.ipynb)              | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/NikkiSatmaka/creditcard-customer-segmentation/blob/main/h8dsft_P1G4_nikki_satmaka.ipynb)              | [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/NikkiSatmaka/creditcard-customer-segmentation/blob/main/h8dsft_P1G4_nikki_satmaka.ipynb)              |
 
-4. Berikut ini adalah informasi dari setiap column. 
-   <img src='https://i.ibb.co/2sbf0Js/P1-G4-Dataset-Information.png'>
+<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
 
-5. Simpan dataset dalam bentuk `.csv` dengan nama `h8dsft_P1G4_<nama-students>.csv` misal `h8dsft_P1G4_raka_ardhi.csv`.
+Here is a random GIF as a placeholder.
 
-6. Salin query yang telah dibuat di Google Cloud Platform. Tulislah pada bagian atas notebook!
+![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
 
-7. Tampilkan `head` dan `tail` dari dataset pada notebook!
+# Table of contents
 
----
+<!-- After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
 
-## Assignment Instructions
+Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-*Graded Challenge 4* dikerjakan dalam format ***notebook*** dengen beberapa **kriteria wajib** di bawah ini:
+- [Credit Card Customer Segmentation](#credit-card-customer-segmentation)
+- [Demo-Preview](#demo-preview)
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Contribute](#contribute)
+    - [Sponsor](#sponsor)
+    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+- [License](#license)
+- [Footer](#footer)
 
-1. Machine learning framework yang digunakan adalah *Scikit-Learn*.
+# Installation
+[(Back to top)](#table-of-contents)
 
-2. Ada penggunaan library visualisasi, seperti *matplotlib*, *seaborn*, atau yang lain.
+<!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.***
 
-3. Isi *notebook* harus mengikuti *outline* di bawah ini:
-   1. Perkenalan
-      > Bab pengenalan harus diisi dengan identitas, gambaran besar dataset yang digunakan, dan *objective* yang ingin dicapai.
-   
-   2. Import Libraries
-      > *Cell* pertama pada *notebook* **harus berisi dan hanya berisi** semua *library* yang digunakan dalam *project*.
-   
-   3. Data Loading
-      > Bagian ini berisi proses penyiapan data sebelum dilakukan eksplorasi data lebih lanjut. Proses Data Loading dapat berupa memberi nama baru untuk setiap kolom, mengecek ukuran dataset, dll.
-   
-   4. Exploratory Data Analysis (EDA)
-      > Bagian ini berisi explorasi data pada dataset diatas dengan menggunakan query, grouping, visualisasi sederhana, dan lain sebagainya.
-   
-   5. Data Preprocessing
-      > Bagian ini berisi proses penyiapan data untuk proses pelatihan model, seperti pembagian data menjadi train-set dan inference-set, transformasi data (normalisasi, encoding, dll.), dan proses-proses lain yang dibutuhkan.
-   
-   6. Model Definition
-      > Bagian ini berisi cell untuk mendefinisikan model. Jelaskan alasan menggunakan suatu algoritma/model, hyperparameter yang dipakai, jenis penggunaan metrics yang dipakai, dan hal lain yang terkait dengan model.
+The first one should be how to install(how to generally use your project or set-up for editing in their machine).
 
-   7. Model Training
-      > Cell pada bagian ini hanya berisi code untuk melatih model dan output yang dihasilkan. Lakukan beberapa kali proses training dengan hyperparameter yang berbeda untuk melihat hasil yang didapatkan. Analisis dan narasikan hasil ini pada bagian Model Evaluation.
-   
-   8. Model Evaluation
-      > Pada bagian ini, dilakukan evaluasi model yang harus menunjukkan bagaimana performa model berdasarkan metrics yang dipilih. Hal ini harus dibuktikan dengan visualisasi tren performa dan/atau tingkat kesalahan model. **Lakukan analisis terkait dengan hasil pada model dan tuliskan hasil analisisnya**.
+This should give the users a concrete idea with instructions on how they can use your project repo with all the steps.
 
-   9. Model Inference
-      > Model yang sudah dilatih akan dicoba pada data yang bukan termasuk ke dalam train-set. Data ini harus dalam format yang asli, bukan data yang sudah di-scaled.
-   
-   10. Pengambilan Kesimpulan
-       > Pada bagian terakhir ini, **harus berisi** kesimpulan yang mencerminkan hasil yang didapat dengan *objective* yang sudah ditulis di bagian pengenalan.
-    
-5. *Notebook* harus diupload dalam akun GitHub masing-masing siswa untuk selanjutnya dinilai.
+Following this steps, **they should be able to run this in their device.**
 
----
+A method I use is after completing the README, I go through the instructions from scratch and check if it is working. -->
 
-## Assignment Submission
+<!-- Here is a sample instruction:
 
-- Simpan assignment pada sesi ini dengan nama `h8dsft_P1G4_<nama-students>.ipynb` misal `h8dsft_P1G4_raka_ardhi.ipynb`.
+To use this project, first clone the repo on your device using the command below:
 
-- Push assignment yang telah Anda buat ke akun Github Classroom Anda masing-masing.
+```git init```
 
----
+```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
 
-## Assignment Rubrics
+# Usage
+[(Back to top)](#table-of-contents)
 
-### Code Review
+<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| SQL | Mampu melakukan query data dengan kriteria yang telah diberikan | 20 pts |
-| Preprocessing | Mampu melakukan preprocessing dataset sebelum melakukan proses modeling (split data, normalisasi, encoding, dll) | 20 pts |
-| PCA | Mampu melakukan reduksi dimensi dengan menggunakan PCA | 10 pts |
-| K-Means | Mengimplementasikan K-Means dan mengevaluasi hasil cluster yang terbentuk (**minimal 2 teknik berbeda**) | 20 pts |
-| Other Algorithm Clustering | Mengimplementasikan **dua algoritma clustering yang lain** selain K-Means beserta hyperparameter yang tepat dengan Scikit-Learn | 20 pts each (40 pts max) |
-| Model Inference | Mencoba model yang telah dibuat dengan data baru | 10 pts |
-| Apakah Kode Berjalan Tanpa Ada Error? | Kode berjalan tanpa ada error. Seluruh kode berfungsi dan dibuat dengan benar| 10 pts |
+# Development
+[(Back to top)](#table-of-contents)
 
-### Concepts
+<!-- This is the place where you give instructions to developers on how to modify the code.
 
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Clustering | Mampu menjawab pertanyaan dengan singkat, jelas, dan padat serta sesuai dengan konsep dan logika yang ada mengenai Conceptual Problems (Soal 1 : 10 pts. Soal 2 : 10 pts. Soal 3 : 20 pts) | 40 pts |
+You could give **instructions in depth** of **how the code works** and how everything is put together.
 
-### Readability
+You could also give specific instructions to how they can setup their development environment.
 
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Tertata Dengan Baik | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 20 pts |
+Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
 
-```
-Kriteria tertata dengan baik diantaranya adalah: 
+# Contribute
+[(Back to top)](#table-of-contents)
 
-1. Terdapat section Perkenalan yang jelas.
-2. Tidak menyalin markdown dari tugas lain.
-3. Import library rapih (terdapat dalam 1 cell dan tidak ada unused libs).
-4. Pemakaian fungsi markdown yang optimal (Heading, text formating, dll).
-5. Terdapat komentar pada setiap baris kode.
-6. Adanya pemisah yang jelas antar section, dll.
-```
+<!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
 
-### Analysis
+Also this shows how you can add subsections within a section. -->
 
-| Criteria | Meet Expectations | Points|
-| --- | --- | --- |
-| Model Analysis | Menganalisa informasi dari model yang telah dibuat | 30 pts |
-| Overall Analysis | Menarik informasi/kesimpulan dari keseluruhan kegiatan yang dilakukan | 20 pts |
+### Sponsor
+[(Back to top)](#table-of-contents)
 
-```
-Contoh kriteria analisa yang baik diantaranya adalah: 
+<!-- Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
 
-1. Terdapat penjelasan macam-macam hasil metric evaluasi dan interpretasinya terhadap kasus yang diselesaikan.
-2. Dapat menjelaskan kelemahan/kekurangan dan kelebihan dari model yang dibuat.
-3. Dapat memberikan statement untuk improvement selanjutnya dari model yang dibuat. 
-4. Sebutkan insight yang dapat diambil setelah proses EDA, dll.
-```
+You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
 
----
+A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*) -->
 
-```
-Total Points : 240
-```
+### Adding new features or fixing bugs
+[(Back to top)](#table-of-contents)
 
----
+<!-- This is to give people an idea how they can raise issues or feature requests in your projects.
 
-## Notes
+You could also give guidelines for submitting and issue or a pull request to your project.
 
-* **Deadline : P1W4D2 pukul 23:59 WIB.**
+Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
 
-* **Keterlambatan pengumpulan tugas mengakibatkan skor GC 4 menjadi 0.**
+You could also add contact details for people to get in touch with you regarding your project. -->
+
+# License
+[(Back to top)](#table-of-contents)
+
+<!-- Adding the license to README is a good practice so that people can easily refer to it.
+
+Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
+
+I personally add the name of the license and provide a link to it like below. -->
+
+[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+
+# Footer
+[(Back to top)](#table-of-contents)
+
+<!-- Let's also add a footer because I love footers and also you **can** use this to convey important info.
+
+Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
+
+Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
+
+<!-- Add the footer here -->
+
+<!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
